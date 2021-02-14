@@ -1,0 +1,49 @@
+<p>booking works!
+    car id is {{id}}
+</p>
+
+    
+        <form class="request-form">
+            <div class="content">
+            <h1>Booknow</h1>
+            <hr>
+            <p>Model</p>
+            <h2>{{car.name}}</h2>
+            <p>Duration</p>
+            <input type="radio" id="1" name="duration" value=1>
+<label for="1">1 month</label><br>
+<input type="radio" id="3" name="duration" value=3>
+<label for="3">3 months</label><br>
+<input type="radio" id="6" name="duration" value=6>
+<label for="6">6 months</label>
+<input type="radio" id="12" name="duration" value=12>
+<label for="12">1 year</label>
+<p>Rental price: {{car.rental_price}} / Month</p>
+
+<h1 class="amount-payable">Payable Amount: Rs {{car.price}}</h1>
+<hr>
+<h2>Details</h2>
+    <label for="fullName">Full Name</label><br>
+<input type="text" id="fn" name="fullName">
+<label for="email">Email</label><br>
+<input type="email" id="em" name="email">
+<label for="phone">Phone</label><br>
+<input type="tel" id="ph" name="phone">
+
+<div class="frm-action-btn">
+
+    <button type="submit">Submit</button>
+<button type="reset" [routerLink]="['../../']">Cancel</button>
+</div>
+
+
+</div>
+
+
+
+
+        </form>
+  
+
+
+

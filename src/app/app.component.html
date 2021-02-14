@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <div class="heading"><h1>Online Car rental Service</h1></div>
+    
+    <div class="container">
+        <div class="card" *ngFor="let car of cars" (click)="getCarDetails(car.id)">
+            <img src="../assets/car.svg" alt="car-image" height="50%" width="50%">
+            <h2>{{car.name}}</h2>
+            <p>{{car.price}} Lakh (Estimated price)</p>
+            <p><strong>{{car.rental_price}} INR/Month</strong></p>
+            <p><strong>{{car.type}}</strong></p>
+
+        </div>
+    </div>
+
+    <router-outlet></router-outlet>
+    
+    
+</div>
